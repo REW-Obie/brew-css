@@ -1,0 +1,254 @@
+@import './config.pcss';
+
+/* weak styles, so we can override w/ modifier classes */
+.hero__head,
+.hero__body,
+.hero__foot {
+    padding: var(--size-md);
+}
+
+.hero.hero {
+    background: #555;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* foreground container */
+
+.hero__fg.hero__fg {
+    --zIndex-fg: var(--zIndex-3);
+    z-index: var(--zIndex-fg);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.hero__body input,
+.hero__body button,
+.hero__body a,
+.hero__body .input,
+.hero__body form {
+    pointer-events: all;
+}
+
+.hero__head.hero__head {
+    align-self: flex-start;
+    width: 100%;
+}
+
+.hero__foot.hero__foot {
+    align-self: flex-end;
+    width: 100%;
+}
+
+/* background container */
+
+.hero__bg.hero__bg {
+    --zIndex-bg: var(--zIndex-1);
+    --zIndex-cloak: var(--zIndex-2);
+    z-index: var(--zIndex-bg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero__bg * {
+    pointer-events: all;
+}
+
+.hero__bg.hero__bg .cloak {
+    z-index: var(--zIndex-cloak);
+}
+
+/* sizing/ratio */
+
+.hero.hero--landscape::after {
+    content: "";
+    display: block;
+    padding-bottom: 66.666%;
+}
+
+.hero.hero--portrait::after {
+    content: "";
+    display: block;
+    padding-bottom: 150%;
+}
+
+.hero.hero--square::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.hero.hero--cover {
+    width: 100%;
+    height: 100vh;
+}
+
+/* iPhone Pano */
+.hero.hero--2\/9::after {
+    content: "";
+    display: block;
+    padding-bottom: 22.222%;
+}
+
+.hero--auto .hero__fg {
+    position: relative;
+}
+
+.hero.hero--auto::after {
+    display: none;
+    height: auto;
+}
+
+.hero__body.hero__body {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    align-self: stretch;
+    flex-grow: 99;
+    align-items: center;
+}
+
+.hero__bg-content {
+    --zIndex-base: var(--zIndex-1);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: var(--zIndex-base);
+}
+
+/* @xs */
+
+@media only screen and (--viewport-xs) {
+    .hero.hero--square\@xs::after {
+        padding-bottom: 100%;
+    }
+
+    .hero.hero--landscape\@xs::after {
+        padding-bottom: 66.666%;
+    }
+
+    .hero.hero--portrait\@xs::after {
+        padding-bottom: 150%;
+    }
+
+    .hero.hero--cover\@xs {
+        height: 100vh;
+    }
+
+    .hero.hero--cover\@xs::after {
+        display: none;
+    }
+}
+
+/* @sm */
+
+@media only screen and (--viewport-sm) {
+    .hero.hero--square\@sm::after {
+        padding-bottom: 100%;
+    }
+
+    .hero.hero--landscape\@sm::after {
+        padding-bottom: 66.666%;
+    }
+
+    .hero.hero--portrait\@sm::after {
+        padding-bottom: 150%;
+    }
+
+    .hero.hero--cover\@sm {
+        height: 100vh;
+    }
+
+    .hero.hero--cover\@sm::after {
+        display: none;
+    }
+}
+
+/* @md */
+
+@media only screen and (--viewport-md) {
+    .hero.hero--square\@md::after {
+        padding-bottom: 100%;
+    }
+
+    .hero.hero--landscape\@md::after {
+        padding-bottom: 66.666%;
+    }
+
+    .hero.hero--portrait\@md::after {
+        padding-bottom: 150%;
+    }
+
+    .hero.hero--cover\@md {
+        height: 100vh;
+    }
+
+    .hero.hero--cover\@md::after {
+        display: none;
+    }
+}
+
+/* @lg */
+
+@media only screen and (--viewport-lg) {
+    .hero.hero--square\@lg::after {
+        padding-bottom: 100%;
+    }
+
+    .hero.hero--landscape\@lg::after {
+        padding-bottom: 66.666%;
+    }
+
+    .hero.hero--portrait\@lg::after {
+        padding-bottom: 150%;
+    }
+
+    .hero.hero--cover\@lg {
+        height: 100vh;
+    }
+
+    .hero.hero--cover\@lg::after {
+        display: none;
+    }
+}
+
+/* @xl */
+
+@media only screen and (--viewport-xl) {
+    .hero.hero--square\@xl::after {
+        padding-bottom: 100%;
+    }
+
+    .hero.hero--landscape\@xl::after {
+        padding-bottom: 66.666%;
+    }
+
+    .hero.hero--portrait\@xl::after {
+        padding-bottom: 150%;
+    }
+
+    .hero.hero--cover\@xl {
+        height: 100vh;
+    }
+
+    .hero.hero--cover\@xl::after {
+        display: none;
+    }
+}

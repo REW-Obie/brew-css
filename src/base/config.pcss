@@ -1,0 +1,44 @@
+/* Global variables used to apply specific values
+ *
+ * Syntax: --<property>-<identifier>[-componentName]
+ * E.g: --color-primary-btn || --size-1-btn
+ *
+ *
+ */
+
+:root {
+    /* Sizing */
+    --size-xs: 8px;
+    --size-sm: 16px;
+    --size-md: 24px;
+    --size-lg: 32px;
+    --size-xl: 40px;
+    --size-xxl: 48px;
+
+    /* Font */
+    --font-sans-serif: Lato, sans-serif;
+
+    /* Colors */
+    --color-default: #f1f0ef;
+    --color-positive: #41d235;
+    --color-negative: #e82c02;
+    --color-caution: #e88b00;
+
+    /* z-index */
+    --zIndex-1: 10;
+    --zIndex-2: 20;
+    --zIndex-3: 30;
+    --zIndex-4: 40;
+    --zIndex-5: 50;
+    --zIndex-6: 60;
+    --zIndex-7: 70;
+    --zIndex-8: 80;
+    --zIndex-9: 90;
+}
+
+/* Breakpoints */
+@custom-media --viewport-xs (max-width: 479px);
+@custom-media --viewport-sm (max-width: 800px);
+@custom-media --viewport-md (min-width: 801px) and (max-width: 991px);
+@custom-media --viewport-lg (min-width: 992px) and (max-width: 1999px);
+@custom-media --viewport-xl (min-width: 1999px);

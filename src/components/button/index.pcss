@@ -1,0 +1,56 @@
+/* .btn is deprecated, class is here for backwards compatibility */
+
+.button,
+.btn {
+    background: #e4e2e0;
+    border: 1px solid #d7d5d2;
+    padding: 15px 31px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.button:hover,
+.btn:hover {
+    border-color: #e4e2e0;
+    background: #f1f0ef;
+}
+
+.button--sm,
+.btn--sm {
+    padding: var(--size-xs) var(--size-sm);
+}
+
+.button.button--pill,
+.btn.-pill {
+    border-radius: var(--size-xl);
+}
+
+.button.button--strong,
+.btn--strong {
+    color: #fff;
+    background: linear-gradient(90deg, #6c9 30%, #9eef76 70%);
+    background-position: 0 0;
+    background-size: 200% 300%;
+    transition: background 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    border-color: transparent;
+    font-weight: bold;
+}
+
+.button.button--strong:hover,
+.btn--strong:hover {
+    background-position: 98% 0;
+}
+
+.button.button--bordered {
+    background: transparent;
+    border: 1px solid #7d7d7c;
+    color: #666;
+}
+
+.button.button--ghost {
+    background: transparent;
+    border-color: transparent;
+}

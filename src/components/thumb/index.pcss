@@ -1,0 +1,70 @@
+.thumb {
+    width: 72px;
+    height: 72px;
+    position: relative;
+    border-radius: 2px;
+    display: inline-block;
+    color: #fff;
+    overflow: hidden;
+    font-size: 32px;
+    line-height: 32px;
+    background: #999;
+    flex-shrink: 0;
+}
+
+.thumb > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.thumb--top > img {
+    object-position: top;
+}
+
+.thumb--center > img {
+    object-position: center;
+}
+
+.thumb--bottom > img {
+    object-position: bottom;
+}
+
+.thumb .icon,
+.thumb__label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.thumb--round {
+    border-radius: 100%;
+}
+
+.thumb--tiny {
+    height: var(--size-sm);
+    width: var(--size-sm);
+    font-size: var(--size-xs);
+    line-height: var(--size-xs);
+}
+
+.thumb--sm {
+    height: var(--size-md);
+    width: var(--size-md);
+    font-size: calc( var(--size-md) / 2 );
+    line-height: calc( var(--size-md) / 2 );
+}
+
+.thumb--md {
+    height: var(--size-xxl); /* two line-heights */
+    width: var(--size-xxl);
+    font-size: var(--size-md);
+    line-height: var(--size-md);
+}
+
+.thumb--lg {
+    height: 72px; /* three line-heights */
+    width: 72px;
+}

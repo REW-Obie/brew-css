@@ -1,0 +1,48 @@
+.window.window {
+    --zIndex-modal: var(--zIndex-8);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    z-index: var(--zIndex-modal);
+    border-radius: 3px;
+}
+
+.window.init {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -150px 0 0 -300px;
+}
+
+.window .window__pane {
+    padding: var(--size-sm);
+}
+
+.window .window__head {
+    height: auto;
+    display: flex;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.window .window__title {
+    padding: 0 var(--size-xs);
+    flex-grow: 9;
+}
+
+.window .window__pane {
+    clear: left;
+    padding: calc((24px / 4) - 1) 11px;
+}
+/* .btnset class is deprecated, here for backwards compatibility */
+.window__title .btnset,
+.window__title .buttons {
+    flex-shrink: 0;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .window {
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}

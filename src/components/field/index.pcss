@@ -1,0 +1,44 @@
+.field.field {
+    padding: var(--size-xs) 0;
+}
+
+.field .field__label {
+    padding: var(--size-xs) 0;
+    display: block;
+    font-weight: bold;
+}
+
+.field .field__tip {
+    display: block;
+    padding: var(--size-xs) 0;
+}
+
+.field input {
+    border: 1px solid #ccc;
+    padding: 7px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.field input[type=radio],
+.field input[type=checkbox] {
+    width: auto;
+    background: transparent;
+}
+
+.field select {
+    border: 1px solid #ccc;
+    appearance: none;
+    max-height: var(--size-xxl);
+    min-height: var(--size-xxl);
+    border-radius: 3px;
+    width: 100%;
+    padding: 15px 7px;
+    background: #fff;
+}
+
+.input.-pill {
+    border-radius: var(--size-xl);
+}

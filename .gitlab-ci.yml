@@ -1,0 +1,21 @@
+image: us.gcr.io/rew-cloud/b1alpha-remote1:latest@sha256:32966cf3015ad05ecc49bf83b2532181b896bf7b6524b7e7113e7e7d5651d7a8
+
+cache:
+  paths:
+    - node_modules/
+
+stages:
+  - build
+
+before_script:
+ - eval $(ssh-agent -s)
+ - ssh-add /usr/local/etc/ssh/yolo_ssh
+
+build:
+  tags: [gke]
+  stage: build
+  script:
+   - npm -q install
+   - npm run lint
+   - npm run ship -- --progress false
+

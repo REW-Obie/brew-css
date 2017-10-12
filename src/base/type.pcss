@@ -1,0 +1,91 @@
+body {
+    line-height: 24px;
+}
+
+body,
+p,
+li,
+th,
+td,
+input,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: none;
+}
+
+.-text-bold {
+    font-weight: bold;
+}
+
+/* sizing */
+
+.-text-2x.-text-2x,
+h1 {
+    font-size: 48px;
+    line-height: 48px;
+    margin: 0 0 24px;
+}
+
+.-text-xl.-text-xl,
+h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 0 16px;
+}
+
+.-text-lg.-text-lg,
+h3 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.-text-md.-text-md,
+h4 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.-text-sm.-text-sm {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.-text-xs.-text-xs {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    .-text-xl.-text-xl,
+    h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .-text-lg.-text-lg,
+    h2 {
+        margin: 0 0 16px;
+    }
+}
+
+/* transforms */
+
+.-text-upper {
+    text-transform: uppercase;
+}
+
+.-text-lower {
+    text-transform: lowercase;
+}
+
+.-text-plain {
+    text-transform: none;
+    text-decoration: none;
+    font-weight: normal;
+}

@@ -1,0 +1,38 @@
+.divider.divider {
+    display: flex;
+    flex-direction: row;
+}
+
+.divider .divider__label {
+    flex: 0 0 auto;
+    padding: 0 12px;
+    align-self: center;
+}
+
+.divider .-left {
+    order: -1;
+    padding-left: 0;
+}
+
+.divider .-right {
+    order: 1;
+    padding-right: 0;
+}
+
+.divider::after {
+    content: "";
+    display: block;
+    flex: 9 0 auto;
+    background: #ddd;
+    height: 1px;
+    align-self: center;
+}
+
+.divider::before {
+    content: "";
+    display: block;
+    flex: 9 0 auto;
+    background: #ddd;
+    height: 1px;
+    align-self: center;
+}

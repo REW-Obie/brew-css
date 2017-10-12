@@ -1,0 +1,32 @@
+{
+    "name": "brew",
+    "version": "1.0.0",
+    "private": true,
+    "description": "",
+    "dependencies": {
+        "normalize.css": "^7.0.0"
+    },
+    "devDependencies": {
+        "cross-env": "^5.0.2",
+        "laravel-mix": "^1.4.2",
+        "react": "^15.6.1",
+        "react-dom": "^15.6.1",
+        "react-styleguidist": "^6.0.5",
+        "stylelint-config-standard": "^17.0.0",
+        "stylelint": "^8.0.0",
+        "cssnano": "^3.10.0",
+        "postcss-import": "^11.0.0",
+        "postcss-cssnext": "^3.0.2",
+        "postcss-css-variables": "^0.8.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "ship": "cross-env NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --env.mixfile=webpack.mix.js",
+        "build": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --env.mixfile=webpack.mix.js",
+        "watch": "npm run build -- --watch",
+        "lint": "stylelint \"src/**/*.{css,pcss}\" --formatter verbose",
+        "docs:server": "styleguidist server",
+        "docs:build": "styleguidist build"
+    },
+    "main": "src/brew.pcss"
+}

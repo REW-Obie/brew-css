@@ -1,0 +1,44 @@
+.article {
+    --zIndex-base: var(--zIndex-1);
+    --zIndex-adjacent: var(--zIndex-2);
+}
+
+.article .article__photo {
+    position: relative;
+    margin-bottom: var(--size-md);
+    display: block;
+}
+
+.article .article__photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: var(--zIndex-base);
+    object-fit: cover;
+}
+
+.article .article__body {
+    position: relative;
+}
+
+.article .article__flags {
+    position: absolute;
+    display: block;
+    top: -29px;
+    left: 0;
+    z-index: var(--zIndex-adjacent);
+    width: 100%;
+}
+
+.article .article__flag {
+    padding: 0 4px;
+    border-radius: 4px;
+    font-size: 10px;
+    line-height: 16px;
+    color: #fff;
+    display: inline-block;
+    margin: 0 4px 0 0;
+}
+

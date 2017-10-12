@@ -1,0 +1,383 @@
+.columns.columns {
+    margin: 0 -12px;
+    position: relative;
+
+    /* this fixes height issues */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.columns.columns--space-between {
+    justify-content: space-between;
+}
+
+.columns.columns--no-wrap {
+    flex-wrap: nowrap;
+}
+
+.columns--equal .column {
+    flex: 1 1 0;
+}
+
+.columns .column {
+    margin: 12px;
+    float: left;
+}
+
+.column.-width-1\/1 {
+    width: calc(100% - 24px);
+    float: none;
+}
+
+.column.-width-1\/2 {
+    width: calc(50% - 24px);
+}
+
+.column.-width-1\/3 {
+    width: calc(33.333% - 24px);
+}
+
+.column.-width-1\/4 {
+    width: calc(25% - 24px);
+}
+
+.column.-width-1\/5 {
+    width: calc(20% - 24px);
+}
+
+.column.-width-2\/3 {
+    width: calc(66.666% - 24px);
+}
+
+.column.-width-3\/4 {
+    width: calc(75% - 24px);
+}
+
+.column.-width-2\/5 {
+    width: calc(40% - 24px);
+}
+
+.column.-width-3\/5 {
+    width: calc(60% - 24px);
+}
+
+.column.-width-4\/5 {
+    width: calc(80% - 24px);
+}
+
+.column.-width-1\/8 {
+    width: calc(12.5% - 24px);
+}
+
+.column.-width-3\/8 {
+    width: calc(37.5% - 24px);
+}
+
+.column.-width-5\/8 {
+    width: calc(62.5% - 24px);
+}
+
+.column.-width-7\/8 {
+    width: calc(87.5% - 24px);
+}
+
+/* @xs */
+
+@media only screen and (--viewport-xs) {
+    .column.-width-1\/1\@xs {
+        width: calc(100% - 24px);
+        float: none;
+    }
+
+    .column.-width-1\/2\@xs {
+        width: calc(50% - 24px);
+    }
+
+    .column.-width-1\/3\@xs {
+        width: calc(33.333% - 24px);
+    }
+
+    .column.-width-2\/3\@xs {
+        width: calc(66.666% - 24px);
+    }
+
+    .column.-width-1\/4\@xs {
+        width: calc(25% - 24px);
+    }
+
+    .column.-width-1\/5\@xs {
+        width: calc(20% - 24px);
+    }
+
+    .column.-width-3\/4\@xs {
+        width: calc(75% - 24px);
+    }
+
+    .column.-width-2\/5\@xs {
+        width: calc(40% - 24px);
+    }
+
+    .column.-width-3\/5\@xs {
+        width: calc(60% - 24px);
+    }
+
+    .column.-width-4\/5\@xs {
+        width: calc(80% - 24px);
+    }
+
+    .column.-width-1\/8\@xs {
+        width: calc(12.5% - 24px);
+    }
+
+    .column.-width-3\/8\@xs {
+        width: calc(37.5% - 24px);
+    }
+
+    .column.-width-5\/8\@xs {
+        width: calc(62.5% - 24px);
+    }
+
+    .column.-width-7\/8\@xs {
+        width: calc(87.5% - 24px);
+    }
+}
+
+/* @sm */
+
+@media only screen and (--viewport-sm) {
+    .column.-width-1\/1\@sm {
+        width: calc(100% - 24px);
+    }
+
+    .column.-width-1\/2\@sm {
+        width: calc(50% - 24px);
+    }
+
+    .column.-width-1\/3\@sm {
+        width: calc(33.333% - 24px);
+    }
+
+    .column.-width-2\/3\@sm {
+        width: calc(66.666% - 24px);
+    }
+
+    .column.-width-1\/4\@sm {
+        width: calc(25% - 24px);
+    }
+
+    .column.-width-1\/5\@sm {
+        width: calc(20% - 24px);
+    }
+
+    .column.-width-3\/4\@sm {
+        width: calc(75% - 24px);
+    }
+
+    .column.-width-2\/5\@sm {
+        width: calc(40% - 24px);
+    }
+
+    .column.-width-3\/5\@sm {
+        width: calc(60% - 24px);
+    }
+
+    .column.-width-4\/5\@sm {
+        width: calc(80% - 24px);
+    }
+
+    .column.-width-1\/8\@sm {
+        width: calc(12.5% - 24px);
+    }
+
+    .column.-width-3\/8\@sm {
+        width: calc(37.5% - 24px);
+    }
+
+    .column.-width-5\/8\@sm {
+        width: calc(62.5% - 24px);
+    }
+
+    .column.-width-7\/8\@sm {
+        width: calc(87.5% - 24px);
+    }
+}
+
+/* @md */
+
+@media only screen and (--viewport-md) {
+    .column.-width-1\/1\@md {
+        width: calc(100% - 24px);
+    }
+
+    .column.-width-1\/2\@md {
+        width: calc(50% - 24px);
+    }
+
+    .column.-width-1\/3\@md {
+        width: calc(33.333% - 24px);
+    }
+
+    .column.-width-2\/3\@md {
+        width: calc(66.666% - 24px);
+    }
+
+    .column.-width-1\/4\@md {
+        width: calc(25% - 24px);
+    }
+
+    .column.-width-1\/5\@md {
+        width: calc(20% - 24px);
+    }
+
+    .column.-width-3\/4\@md {
+        width: calc(75% - 24px);
+    }
+
+    .column.-width-2\/5\@md {
+        width: calc(40% - 24px);
+    }
+
+    .column.-width-3\/5\@md {
+        width: calc(60% - 24px);
+    }
+
+    .column.-width-4\/5\@md {
+        width: calc(80% - 24px);
+    }
+
+    .column.-width-1\/8\@md {
+        width: calc(12.5% - 24px);
+    }
+
+    .column.-width-3\/8\@md {
+        width: calc(37.5% - 24px);
+    }
+
+    .column.-width-5\/8\@md {
+        width: calc(62.5% - 24px);
+    }
+
+    .column.-width-7\/8\@md {
+        width: calc(87.5% - 24px);
+    }
+}
+
+/* @lg */
+
+@media only screen and (--viewport-lg) {
+    .column.-width-1\/1\@lg {
+        width: calc(100% - 24px);
+    }
+
+    .column.-width-1\/2\@lg {
+        width: calc(50% - 24px);
+    }
+
+    .column.-width-1\/3\@lg {
+        width: calc(33.333% - 24px);
+    }
+
+    .column.-width-2\/3\@lg {
+        width: calc(66.666% - 24px);
+    }
+
+    .column.-width-1\/4\@lg {
+        width: calc(25% - 24px);
+    }
+
+    .column.-width-1\/5\@lg {
+        width: calc(20% - 24px);
+    }
+
+    .column.-width-3\/4\@lg {
+        width: calc(75% - 24px);
+    }
+
+    .column.-width-2\/5\@lg {
+        width: calc(40% - 24px);
+    }
+
+    .column.-width-3\/5\@lg {
+        width: calc(60% - 24px);
+    }
+
+    .column.-width-4\/5\@lg {
+        width: calc(80% - 24px);
+    }
+
+    .column.-width-1\/8\@lg {
+        width: calc(12.5% - 24px);
+    }
+
+    .column.-width-3\/8\@lg {
+        width: calc(37.5% - 24px);
+    }
+
+    .column.-width-5\/8\@lg {
+        width: calc(62.5% - 24px);
+    }
+
+    .column.-width-7\/8\@lg {
+        width: calc(87.5% - 24px);
+    }
+}
+
+/* @xl */
+
+@media only screen and (--viewport-xl) {
+    .column.-width-1\/1\@xl {
+        width: calc(100% - 24px);
+    }
+
+    .column.-width-1\/2\@xl {
+        width: calc(50% - 24px);
+    }
+
+    .column.-width-1\/3\@xl {
+        width: calc(33.333% - 24px);
+    }
+
+    .column.-width-2\/3\@xl {
+        width: calc(66.666% - 24px);
+    }
+
+    .column.-width-1\/4\@xl {
+        width: calc(25% - 24px);
+    }
+
+    .column.-width-1\/5\xl {
+        width: calc(20% - 24px);
+    }
+
+    .column.-width-3\/4\@xl {
+        width: calc(75% - 24px);
+    }
+
+    .column.-width-2\/5\@xl {
+        width: calc(40% - 24px);
+    }
+
+    .column.-width-3\/5\@xl {
+        width: calc(60% - 24px);
+    }
+
+    .column.-width-4\/5\@xl {
+        width: calc(80% - 24px);
+    }
+
+    .column.-width-1\/8\@xl {
+        width: calc(12.5% - 24px);
+    }
+
+    .column.-width-3\/8\@xl {
+        width: calc(37.5% - 24px);
+    }
+
+    .column.-width-5\/8\@xl {
+        width: calc(62.5% - 24px);
+    }
+
+    .column.-width-7\/8\@xl {
+        width: calc(87.5% - 24px);
+    }
+}
